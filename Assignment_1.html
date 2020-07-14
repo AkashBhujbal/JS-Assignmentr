@@ -1,0 +1,25 @@
+<html>
+
+<head>
+  <title>"Assignment No 1"</title>
+</head>
+
+<body>
+<script>
+
+var today = new Date();
+  var day = today.getDay();
+  var daylist = ["Sunday","Monday","Tuesday","Wednesday ","Thursday","Friday","Saturday"];
+  document.write("today is   :  " + daylist[day])
+  document.write("</br>")
+ var hours = today.getHours(); 
+ var ampm = hours >= 12 ? 'PM' : 'AM';
+ hours = (hours >= 12) ? hours - 12 : hours 
+var minutes  = today.getMinutes();
+
+
+document.write("Current time is : "+ hours + " " + ampm + " : "+ minutes +" : " + today.getMilliseconds() ); 
+</script>
+
+</body>
+ </html>
